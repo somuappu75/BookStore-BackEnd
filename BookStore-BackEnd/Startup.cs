@@ -45,6 +45,8 @@ namespace BookStore_BackEnd
             services.AddTransient<IWishlistRL, WishlistRL>();
             services.AddTransient<IFeedbackBL, FeedbackBL>();
             services.AddTransient<IFeedbackRL, FeedbackRL>();
+            services.AddTransient<IOrderBL, OrderBL>();
+            services.AddTransient<IOrderRL, OrderRL>();
             services.AddMemoryCache();
             services.AddSwaggerGen(c =>
             {
